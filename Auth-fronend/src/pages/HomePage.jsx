@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '../components/common/Button';
 
 export const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100">
       <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl w-full space-y-8 text-center">
           <div>
@@ -13,21 +12,17 @@ export const HomePage = () => {
               <span className="block text-blue-600">Auth System</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl">
-              A modern authentication system built with React and Tailwind CSS. 
+              A modern authentication system built with React and Tailwind CSS.
               Secure, scalable, and easy to integrate.
             </p>
           </div>
-          
+
           <div className="mt-8 space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-            <Link to="/login">
-              <Button size="lg" className="w-full sm:w-auto">
-                Sign In
-              </Button>
+            <Link to="/login" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
+              Sign In
             </Link>
-            <Link to="/register">
-              <Button variant="outline" size="lg" className="w-full sm:w-auto mt-4 sm:mt-0">
-                Sign Up
-              </Button>
+            <Link to="/register" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200 mt-4 sm:mt-0">
+              Sign Up
             </Link>
           </div>
 
